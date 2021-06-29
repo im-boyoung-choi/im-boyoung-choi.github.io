@@ -10831,6 +10831,12 @@ article.article .content h4 {
 article.article .content h5 {
   font-size: 1em;
 }
+article.article .content p a {
+  color: #fcee09;
+}
+article.article .content p a:hover {
+  color: inherit;
+}
 article.article .content pre {
   font-size: 0.85em;
 }
@@ -10961,6 +10967,9 @@ a.article-nav-next span {
   padding: 0 0.5rem;
   margin: 1.25rem 0.25rem;
 }
+.navbar-main .navbar-item:hover {
+  color: #8721ff;
+}
 .navbar-main .navbar-item.is-active {
   background-color: transparent;
 }
@@ -10978,6 +10987,12 @@ a.article-nav-next span {
 }
 .navbar-logo img {
   max-height: 1.75rem;
+}
+footer.footer .level-start p a {
+  color: #8721ff;
+}
+footer.footer .level-start p a:hover {
+  color: inherit;
 }
 @media screen and (max-width: 768px) {
   footer.footer .level-start {
@@ -11245,6 +11260,7 @@ figure.highlight.folded .highlight-body {
   height: 0;
 }
 figure.highlight .copy {
+  color: none !important;
   opacity: 0.7;
 }
 figure.highlight pre,
