@@ -10764,6 +10764,9 @@ body > .section {
   overflow: visible;
   border-radius: 0;
 }
+.card .card-content {
+  padding: 2rem !important;
+}
 .card + .card,
 .card + .column-right-shadow {
   margin-top: 1.5rem;
@@ -10805,6 +10808,12 @@ article.media .media-content .title {
   margin: 0;
   line-height: inherit;
 }
+article.article h1 {
+  font-size: 1.9rem !important;
+}
+article.article h1 a {
+  font-size: 1.9rem !important;
+}
 article.article .article-meta,
 article.article .article-tags {
   color: #848484;
@@ -10815,7 +10824,7 @@ article.article .article-meta {
 }
 article.article .content {
   word-wrap: break-word;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 article.article .content h1 {
   font-size: 1.75em;
@@ -10832,11 +10841,36 @@ article.article .content h4 {
 article.article .content h5 {
   font-size: 1em;
 }
+article.article .content h1 a,
+article.article .content h2 a,
+article.article .content h3 a,
+article.article .content h4 a,
+article.article .content h5 a,
+article.article .content h6 a {
+  color: #fcee09;
+}
+article.article .content h1 a:hover,
+article.article .content h2 a:hover,
+article.article .content h3 a:hover,
+article.article .content h4 a:hover,
+article.article .content h5 a:hover,
+article.article .content h6 a:hover {
+  color: inherit;
+}
+article.article .content p {
+  line-height: 1.8;
+}
+article.article .content p:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
 article.article .content p a {
   color: #fcee09;
 }
 article.article .content p a:hover {
   color: inherit;
+}
+article.article .content img {
+  border: 1px solid rgba(0,0,0,0.12);
 }
 article.article .content pre {
   font-size: 0.85em;
@@ -10893,6 +10927,7 @@ article.article .content .message.message-immersive .message-body {
   height: 100%;
 }
 .article-licensing {
+  display: none;
   position: relative;
   z-index: 1;
   box-shadow: none;

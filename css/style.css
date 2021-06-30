@@ -413,7 +413,7 @@ button,
 input,
 select,
 textarea {
-  font-family: 'Noto Sans KR', 'Poppins', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif;
+  font-family: 'Poppins', 'Noto Sans KR', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif;
 }
 code,
 pre {
@@ -1065,13 +1065,13 @@ a.has-text-grey-lightest:focus {
   font-weight: 700 !important;
 }
 .is-family-primary {
-  font-family: 'Noto Sans KR', 'Poppins', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
+  font-family: 'Poppins', 'Noto Sans KR', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
 }
 .is-family-secondary {
-  font-family: 'Noto Sans KR', 'Poppins', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
+  font-family: 'Poppins', 'Noto Sans KR', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
 }
 .is-family-sans-serif {
-  font-family: 'Noto Sans KR', 'Poppins', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
+  font-family: 'Poppins', 'Noto Sans KR', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
 }
 .is-family-monospace {
   font-family: monospace !important;
@@ -10763,6 +10763,9 @@ body > .section {
   overflow: visible;
   border-radius: 4px;
 }
+.card .card-content {
+  padding: 2rem !important;
+}
 .card + .card,
 .card + .column-right-shadow {
   margin-top: 1.5rem;
@@ -10804,6 +10807,12 @@ article.media .media-content .title {
   margin: 0;
   line-height: inherit;
 }
+article.article h1 {
+  font-size: 1.9rem !important;
+}
+article.article h1 a {
+  font-size: 1.9rem !important;
+}
 article.article .article-meta,
 article.article .article-tags {
   color: #7a7a7a;
@@ -10814,7 +10823,7 @@ article.article .article-meta {
 }
 article.article .content {
   word-wrap: break-word;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 article.article .content h1 {
   font-size: 1.75em;
@@ -10831,11 +10840,36 @@ article.article .content h4 {
 article.article .content h5 {
   font-size: 1em;
 }
+article.article .content h1 a,
+article.article .content h2 a,
+article.article .content h3 a,
+article.article .content h4 a,
+article.article .content h5 a,
+article.article .content h6 a {
+  color: #8721ff;
+}
+article.article .content h1 a:hover,
+article.article .content h2 a:hover,
+article.article .content h3 a:hover,
+article.article .content h4 a:hover,
+article.article .content h5 a:hover,
+article.article .content h6 a:hover {
+  color: inherit;
+}
+article.article .content p {
+  line-height: 1.8;
+}
+article.article .content p:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
 article.article .content p a {
   color: #8721ff;
 }
 article.article .content p a:hover {
   color: inherit;
+}
+article.article .content img {
+  border: 1px solid rgba(0,0,0,0.12);
 }
 article.article .content pre {
   font-size: 0.85em;
@@ -10892,6 +10926,7 @@ article.article .content .message.message-immersive .message-body {
   height: 100%;
 }
 .article-licensing {
+  display: none;
   position: relative;
   z-index: 1;
   box-shadow: none;
@@ -11598,7 +11633,7 @@ figure.highlight .section {
 .cc-window,
 .cc-revoke {
   font-size: 1.1rem !important;
-  font-family: 'Noto Sans KR', 'Poppins', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
+  font-family: 'Poppins', 'Noto Sans KR', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
 }
 .cc-window {
   color: #4a4a4a !important;
