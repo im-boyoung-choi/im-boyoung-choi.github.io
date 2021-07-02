@@ -10767,7 +10767,7 @@ body > .section {
   padding: 2rem !important;
 }
 .card .card-content .breadcrumb a {
-  color: #8721ff !important;
+  color: #8721ff;
 }
 .card + .card,
 .card + .column-right-shadow {
