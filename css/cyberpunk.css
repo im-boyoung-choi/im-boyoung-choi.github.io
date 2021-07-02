@@ -10767,6 +10767,9 @@ body > .section {
 .card .card-content {
   padding: 2rem !important;
 }
+.card .card-content nav ul li a {
+  color: #8721ff;
+}
 .card + .card,
 .card + .column-right-shadow {
   margin-top: 1.5rem;
