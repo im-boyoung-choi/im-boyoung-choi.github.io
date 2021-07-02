@@ -10769,6 +10769,9 @@ body > .section {
 .card .card-content .breadcrumb a {
   color: #8721ff;
 }
+.card .card-content .breadcrumb li.is-active a {
+  color: #363636;
+}
 .card + .card,
 .card + .column-right-shadow {
   margin-top: 1.5rem;
