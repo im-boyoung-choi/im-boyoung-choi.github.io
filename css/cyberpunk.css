@@ -10878,6 +10878,7 @@ article.article .content p a:hover {
 article.article .content img {
   width: 100%;
   border: 1px solid rgba(0,0,0,0.12);
+  margin-top: 1rem;
 }
 article.article .content pre {
   font-size: 0.85em;
