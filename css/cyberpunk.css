@@ -10818,13 +10818,6 @@ article.article h1 {
   font-size: 1.9rem !important;
   margin: 1rem 0 3rem;
 }
-article.article h1 a {
-  font-size: 1.9rem !important;
-}
-article.article h3:not(:first-child) {
-  margin: 2.8rem 0 2rem;
-  font-weight: 500;
-}
 article.article .article-meta,
 article.article .article-tags {
   color: #848484;
@@ -10835,23 +10828,22 @@ article.article .article-meta {
 }
 article.article .content {
   word-wrap: break-word;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 article.article .content h1 {
-  font-size: 2em;
-}
-article.article .content h2 {
   font-size: 1.75em;
 }
-article.article .content h3 {
+article.article .content h2 {
   font-size: 1.5em;
 }
-article.article .content h4 {
+article.article .content h3 {
   font-size: 1.25em;
 }
-article.article .content h5 {
+article.article .content h4 {
   font-size: 1.125em;
-  font-weight: 500;
+}
+article.article .content h5 {
+  font-size: 1em;
 }
 article.article .content h1 a,
 article.article .content h2 a,
@@ -10882,7 +10874,6 @@ article.article .content p a:hover {
   color: inherit;
 }
 article.article .content img {
-  width: 100%;
   border: 1px solid rgba(0,0,0,0.12);
   margin-top: 1rem;
 }
@@ -10907,6 +10898,10 @@ article.article .content .message.message-immersive {
 }
 article.article .content .message.message-immersive .message-body {
   border: none;
+}
+article.article .article-tags {
+  display: flex;
+  flex-wrap: wrap;
 }
 .rtl {
   direction: rtl;
@@ -11041,6 +11036,9 @@ footer.footer .level-start p a {
 }
 footer.footer .level-start p a:hover {
   color: inherit;
+}
+footer.footer .level-start p span:last-child {
+  line-height: 2.4;
 }
 @media screen and (max-width: 768px) {
   footer.footer .level-start {
@@ -11402,6 +11400,10 @@ figure.highlight .section {
 }
 .widget .menu-list .level {
   margin-bottom: 0;
+}
+.widget .menu-list .level.is-active {
+  background-color: #f7f0ff;
+  color: #8721ff;
 }
 .widget .menu-list .level .level-left,
 .widget .menu-list .level .level-right,
