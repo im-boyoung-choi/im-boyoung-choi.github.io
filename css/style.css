@@ -10862,8 +10862,11 @@ article.article .content h5 a:hover,
 article.article .content h6 a:hover {
   color: inherit;
 }
+article.article .content b {
+  font-weight: 500 !important;
+}
 article.article .content p {
-  line-height: 1.8;
+  line-height: 2;
 }
 article.article .content p:not(:last-child) {
   margin-bottom: 1.8rem;
@@ -10883,6 +10886,8 @@ article.article .content pre {
 }
 article.article .content code {
   overflow-wrap: break-word;
+  padding: 0.2em 0.5rem !important;
+  word-break: break-all;
 }
 article.article .content blockquote.pullquote {
   float: right;
@@ -10891,7 +10896,26 @@ article.article .content blockquote.pullquote {
   position: relative;
 }
 article.article .content blockquote footer strong + cite {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
+}
+article.article .content table {
+  margin-bottom: 1.8rem !important;
+}
+article.article .content table thead th {
+  text-align: center !important;
+  border: 1px solid #eee !important;
+  background-color: #f7f7f7;
+  font-size: 1rem;
+}
+article.article .content table tbody td {
+  border: 1px solid #eee !important;
+  font-size: 1rem;
+}
+article.article .content table tbody td.code {
+  border: 0 !important;
+}
+article.article .content .highlight-body table {
+  margin-bottom: 0 !important;
 }
 article.article .content .message.message-immersive {
   border-radius: 0;
