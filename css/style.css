@@ -11065,13 +11065,13 @@ a.article-nav-next span {
   margin: 0 0;
 }
 .navbar-main .navbar-item:ative {
-  color: #8721ff;
+  color: #8721ff !important;
 }
 .navbar-main .navbar-item:hover {
-  color: #8721ff;
+  color: #8721ff !important;
 }
 .navbar-main .navbar-item.is-active {
-  color: #8721ff;
+  color: #8721ff !important;
   background-color: transparent;
 }
 @media screen and (max-width: 1087px) {
