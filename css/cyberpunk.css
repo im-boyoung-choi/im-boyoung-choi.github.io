@@ -10878,6 +10878,24 @@ article.article .content p a {
 article.article .content p a:hover {
   color: inherit;
 }
+article.article .content ul,
+article.article .content ol {
+  margin: 1.8rem !important;
+}
+article.article .content ul li,
+article.article .content ol li {
+  line-height: 1.8 !important;
+  margin-bottom: 0.5rem;
+}
+article.article .content ul lilast-child,
+article.article .content ol lilast-child {
+  margin-bottom: 0 !important;
+}
+article.article .content ul p,
+article.article .content ol p {
+  margin-bottom: 0 !important;
+  line-height: 1.5 !important;
+}
 article.article .content img {
   border: 1px solid rgba(0,0,0,0.12);
   margin-top: 1rem;
@@ -10890,11 +10908,25 @@ article.article .content code {
   padding: 0.2em 0.5rem !important;
   word-break: break-all;
 }
+article.article .content blockquote {
+  background-color: #f7f7f7 !important;
+  font-size: 0.85em;
+  margin-bottom: 1.8rem;
+}
+article.article .content blockquote blockquote:last-child {
+  margin-bottom: 0;
+}
 article.article .content blockquote.pullquote {
   float: right;
   max-width: 50%;
   font-size: 1.15rem;
   position: relative;
+}
+article.article .content blockquote p:not(:last-child) {
+  margin-bottom: 1rem !important;
+}
+article.article .content blockquote figure:last-child {
+  margin-bottom: 0 !important;
 }
 article.article .content blockquote footer strong + cite {
   margin-left: 0.5rem;
@@ -10904,12 +10936,12 @@ article.article .content table {
 }
 article.article .content table thead th {
   text-align: center !important;
-  border: 1px solid #eee !important;
+  border: 1px solid #dbdbdb !important;
   background-color: #f7f7f7;
   font-size: 1rem;
 }
 article.article .content table tbody td {
-  border: 1px solid #eee !important;
+  border: 1px solid #dbdbdb !important;
   font-size: 1rem;
 }
 article.article .content table tbody td.code {
