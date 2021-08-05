@@ -10816,6 +10816,7 @@ article.media .media-content .title {
 article.article h1 {
   font-size: 1.9rem !important;
   margin: 1rem 0 3rem;
+  line-height: 1.6;
 }
 article.article .article-meta,
 article.article .article-tags {
@@ -11067,6 +11068,7 @@ a.article-nav-next span {
   color: #8721ff;
 }
 .navbar-main .navbar-item.is-active {
+  color: #8721ff;
   background-color: transparent;
 }
 @media screen and (max-width: 1087px) {
