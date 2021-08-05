@@ -11065,7 +11065,8 @@ a.article-nav-next span {
   padding: 0 0.5rem;
   margin: 1.25rem 0.25rem;
 }
-.navbar-main .navbar-item:hover {
+.navbar-main .navbar-item:hover,
+.navbar-main .navbar-item:ative {
   color: #8721ff;
 }
 .navbar-main .navbar-item.is-active {
