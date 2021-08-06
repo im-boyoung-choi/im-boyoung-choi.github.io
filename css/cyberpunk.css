@@ -11139,7 +11139,7 @@ footer.footer .level-end .field {
 .post-navigation {
   color: #cdcdcd;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .post-navigation .level-item {
   margin-bottom: 0;

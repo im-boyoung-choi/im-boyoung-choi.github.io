@@ -11138,7 +11138,7 @@ footer.footer .level-end .field {
 .post-navigation {
   color: #7a7a7a;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .post-navigation .level-item {
   margin-bottom: 0;
