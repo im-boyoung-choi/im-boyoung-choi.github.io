@@ -10827,6 +10827,9 @@ article.article .article-meta {
   overflow-x: auto;
   margin-bottom: 0.5rem;
 }
+article.article .article-more {
+  margin-top: 1rem;
+}
 article.article .content {
   word-wrap: break-word;
   font-size: 1.2rem;
