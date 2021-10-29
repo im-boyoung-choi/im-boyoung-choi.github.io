@@ -10817,6 +10817,7 @@ article.article h1 {
   font-size: 1.9rem !important;
   margin: 1rem 0 3rem;
   line-height: 1.6;
+  font-weight: 500;
 }
 article.article .article-meta,
 article.article .article-tags {
@@ -10831,6 +10832,7 @@ article.article .article-more {
 }
 article.article .content {
   word-wrap: break-word;
+  word-break: break-all;
   font-size: 1.2rem;
 }
 article.article .content h1 {
@@ -10843,9 +10845,14 @@ article.article .content h3 {
   font-size: 1.4em;
   font-weight: 500;
 }
+article.article .content h3:not(:first-child) {
+  margin-top: 3rem;
+}
 article.article .content h4 {
   font-size: 1.125em;
   font-weight: 500;
+  margin-top: 2.8rem;
+  margin-bottom: 1.2rem;
 }
 article.article .content h5 {
   font-size: 1.2rem;
@@ -10874,7 +10881,7 @@ article.article .content p {
   line-height: 2;
 }
 article.article .content p:not(:last-child) {
-  margin-bottom: 1.8rem;
+  margin-bottom: 1rem;
 }
 article.article .content p a {
   color: #8721ff;
@@ -10882,9 +10889,16 @@ article.article .content p a {
 article.article .content p a:hover {
   color: inherit;
 }
+article.article .content p a.gallery-item {
+  display: block;
+  text-align: center;
+}
+article.article .content p strong {
+  font-weight: 500;
+}
 article.article .content ul,
 article.article .content ol {
-  margin: 1.8rem !important;
+  margin: 1.4rem 1.8rem 2.2rem !important;
 }
 article.article .content ul li,
 article.article .content ol li {
@@ -10894,6 +10908,10 @@ article.article .content ol li {
 article.article .content ul lilast-child,
 article.article .content ol lilast-child {
   margin-bottom: 0 !important;
+}
+article.article .content ul li a,
+article.article .content ol li a {
+  color: #8721ff;
 }
 article.article .content ul p,
 article.article .content ol p {
@@ -10915,7 +10933,8 @@ article.article .content code {
 article.article .content blockquote {
   background-color: #f7f7f7 !important;
   font-size: 0.85em;
-  margin-bottom: 1.8rem;
+  margin-top: 1.8rem;
+  margin-bottom: 2rem;
 }
 article.article .content blockquote blockquote:last-child {
   margin-bottom: 0;
@@ -10928,6 +10947,9 @@ article.article .content blockquote.pullquote {
 }
 article.article .content blockquote p:not(:last-child) {
   margin-bottom: 1rem !important;
+}
+article.article .content blockquote ul:last-child {
+  margin-bottom: 0 !important;
 }
 article.article .content blockquote figure:last-child {
   margin-bottom: 0 !important;
@@ -11361,7 +11383,7 @@ figure.highlight {
   padding: 0;
   width: 100%;
   position: relative;
-  margin: 0.8em 0 2em !important;
+  margin: 1em 0 1.2em !important;
   border-radius: 4px;
 }
 figure.highlight.folded .highlight-body {
