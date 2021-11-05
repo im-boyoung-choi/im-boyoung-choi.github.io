@@ -11489,6 +11489,9 @@ figure.highlight .section {
   background-color: #f7f0ff;
   color: #8721ff;
 }
+.widget .menu-list .level .level-item {
+  line-height: 1.6;
+}
 .widget .menu-list .level .level-left,
 .widget .menu-list .level .level-right,
 .widget .menu-list .level .level-item {
